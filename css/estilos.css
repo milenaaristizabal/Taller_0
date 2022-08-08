@@ -558,9 +558,6 @@ h5 {
 
     .cards-name {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
     }
 
     .cards-name img {
