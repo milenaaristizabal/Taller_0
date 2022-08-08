@@ -63,8 +63,7 @@
 
     .item {
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
 
     nav .menu .item div {
@@ -94,9 +93,6 @@
         display: none;
     }
 
-    /*Barra de navegacion*/
-
-
     .dashboard {
         display: flex;
         background-color: rgba(255, 255, 255, 0.767);
@@ -119,7 +115,6 @@
         letter-spacing: 2px;
     }
 
-    /*Info personal*/
     .info {
         display: flex;
         width: 100%;
@@ -163,11 +158,6 @@
     .icon{
         display: none;
     }
-
-    /*Info personal*/
-
-
-    /*formulario*/
 
     form {
         width: 80%;
@@ -259,6 +249,7 @@
         border-radius: 5px;
         border: 0;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -307,7 +298,6 @@
         flex-direction: row;
         padding: 1rem;
         font-size: 1.5rem;
-
     }
 
     nav .menu .item div:hover {
@@ -340,9 +330,6 @@
         padding-left: 1rem;
     }
 
-    /*Barra de navegacion*/
-
-
     .dashboard {
         display: flex;
         background-color: rgba(255, 255, 255, 0.767);
@@ -364,7 +351,6 @@
         letter-spacing: 2px;
     }
 
-    /*Info personal*/
     .info {
         display: flex;
         width: 100%;
@@ -409,11 +395,6 @@
         font-size: 2em;
     }
 
-    /*Info personal*/
-
-
-    /*formulario*/
-
     form {
         width: 80%;
         margin: 1rem;
@@ -441,7 +422,6 @@
         border-radius: 5px;
         border: 0;
     }
-
 
     #genero {
         display: flex;
@@ -473,10 +453,6 @@
         margin-left: 1em;
     }
 
-    /*formulario*/
-
-
-
     .pass {
         display: flex;
         flex-direction: row;
@@ -485,7 +461,6 @@
     }
 
     .pass input {
-
         width: 70%;
         padding: 0.5rem;
         font-size: 1.2em;
@@ -501,7 +476,6 @@
     }
 
     .pass2 input {
-
         width: 70%;
         padding: 0.5rem;
         font-size: 1.2em;

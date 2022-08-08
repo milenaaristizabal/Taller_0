@@ -62,7 +62,7 @@ h5 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: transform .6s ease
+        transition: transform .6s ease;
     }
 
     .menu-hr {
@@ -80,7 +80,8 @@ h5 {
         font-size: 1.3em;
         position: sticky;
         width: 100%;
-        z-index: 1;
+        padding: 0%;
+        z-index: 3;
     }
 
     nav a {
@@ -105,6 +106,10 @@ h5 {
 
     .open {
         transform: translateX(0);
+    }
+
+    .container-carousel{
+        margin-top: -94.9%;
     }
 
     .container-text {
@@ -395,6 +400,10 @@ h5 {
         background-color: #0B3860;
         color: var(--blanco);
         width: 100%;
+    }
+
+    .container-carousel{
+        margin-top: 0%;
     }
 
     .container-text {
