@@ -21,7 +21,7 @@
 
 body {
     display: flex;
-    background-image: url(../img/lin-leyu-cIRFLobYPkY-unsplash.jpg);
+    background-image: url(../img/bogota.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -34,18 +34,18 @@ h5 {
     font-family: 'Marcellus', serif;
 }
 
-@media only screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
 
     body {
         display: flex;
-        background-image: url(../img/lin-leyu-cIRFLobYPkY-unsplash.jpg);
+        background-image: url(../img/bogota.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         justify-content: center;
         flex-direction: column;
     }
 
-    .container-information {
+    .container-blue {
         width: 100%;
         height: 100%;
         margin-top: 10%;
@@ -55,17 +55,22 @@ h5 {
         color: var(--blanco);
     }
 
-    .container-image {
-        width: 10rem;
-        align-self: center;
-    }
+        
+.logo{
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    max-height: 300px;
+}
 
-    .container-tittle {
-        text-align: center;
-        padding: 2rem;
-        margin-left: 3rem;
-        font-size: 3rem;
-    }
+#frase{
+    padding-top: 20px;
+    font-size: 50px;
+    color: var(--blanco);
+    text-align: center;
+    font-family: Marcellus;
+}
+
 
     .container-register {
         background-color: rgba(255, 255, 255, 0.767);
@@ -77,14 +82,25 @@ h5 {
         border-radius: 5px;
         align-self: center;
     }
+    #ti{
+    display: flex;
+    font-size: 70px;
+    font-family: Marcellus;
+    justify-content: center;
+            align-content: center;
+            align-items: center;
+}
+    
+    .text-danger{
+        color: red;
+    }
 
     .container-name {
         width: 100%;
         display: flex;
         justify-content: center;
         padding: 1rem;
-        font-size: 1.5rem;
-        letter-spacing: 2px;
+        font-size: 1em;
     }
 
     .container-register .container-columns {
@@ -168,44 +184,62 @@ h5 {
         font-family: 'Roboto', sans-serif;
     }
 
-    .modal {
+    .titulo-modal{
+        background: linear-gradient(49.54deg, rgba(79, 156, 224, 0.863) 2.89%, rgba(11, 56, 96, 0.89) 80.34%);
         width: 100%;
-        height: 100vh;
+    }
+    .ingresar{
         display: flex;
         justify-content: center;
-        align-items: center;
+       align-content: center;
+       align-items: center;
+       
     }
-
-    .modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.5);
-        transition: all 500ms ease;
-        opacity: 0;
-        visibility: hidden;
+    .boton-aceptar{
+        
+        display: flex;
+        justify-content: center;
+       align-content: center;
+       align-items: center;
     }
+    /* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-    #btn-modal:checked~.modal {
-        opacity: 1;
-        visibility: visible;
-    }
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
 
-    .contenedor {
-        width: 90%;
-        margin: auto;
-        background: var(--blanco);
-        box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
-        transition: all 500ms ease;
-        position: relative;
-        transform: translateY(-30%);
-        font-family: 'Roboto', sans-serif;
-    }
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
 
-    #btn-modal:checked~.modal .contenedor {
-        transform: translateY(0%);
-    }
-
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+    
     .contenedor header {
         padding: 10px;
         background: linear-gradient(49.54deg, rgba(69, 162, 243, 0.863) 2.89%, rgba(6, 55, 99, 0.89) 80.34%);
@@ -271,13 +305,13 @@ h5 {
 
     body {
         display: flex;
-        background-image: url(../img/lin-leyu-cIRFLobYPkY-unsplash.jpg);
+        background-image: url(../img/bogota.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         flex-direction: row;
     }
 
-    .container-information {
+    .container-blue {
         width: 37%;
         height: 60.5rem;
         margin-top: 0%;
@@ -288,20 +322,19 @@ h5 {
         flex-direction: column;
         color: var(--blanco);
     }
+    
+.logo{
+    max-width: 300px;
+    max-height: 300px;
+}
 
-    .container-image {
-        width: 20rem;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .container-tittle {
-        text-align: center;
-        padding: 2rem;
-        margin-left: 3rem;
-        font-size: 3rem;
-    }
-
+#frase{
+    padding-top: 20px;
+    font-size: 50px;
+    color: var(--blanco);
+    text-align: center;
+    font-family: Marcellus;
+}
     .container-register {
         background-color: rgba(255, 255, 255, 0.767);
         margin: 3rem;
@@ -310,7 +343,9 @@ h5 {
         font-size: 1.2em;
         border-radius: 5px;
     }
-
+    .text-danger{
+        color: red;
+    }
     .container-name {
         width: 100%;
         display: flex;
@@ -382,93 +417,62 @@ h5 {
     label {
         font-family: 'Roboto', sans-serif;
     }
-
-    .modal {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.5);
-        transition: all 500ms ease;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    #btn-modal:checked~.modal {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .contenedor {
-        width: 35%;
-        margin: auto;
-        background: var(--blanco);
-        box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
-        transition: all 500ms ease;
-        position: relative;
-        transform: translateY(-30%);
-        font-family: 'Roboto', sans-serif;
-    }
-
-    #btn-modal:checked~.modal .contenedor {
-        transform: translateY(0%);
-    }
-
-    .contenedor header {
-        padding: 10px;
+    /*modal*/
+    .titulo-modal{
+        padding: 1px;
         background: linear-gradient(49.54deg, rgba(79, 156, 224, 0.863) 2.89%, rgba(11, 56, 96, 0.89) 80.34%);
+        width: 100%;
         color: var(--blanco);
         text-align: center;
         font-size: 2em;
         font-family: 'Roboto', sans-serif;
     }
-
-    .contenedor label {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        color: var(--blanco);
-        font-size: 15px;
-        cursor: pointer;
-    }
-
-    .contenido {
+    .ingresar{
         display: flex;
-        width: 100%;
-        padding: 10px;
-        flex-direction: column;
         justify-content: center;
+       align-content: center;
+       align-items: center;
+       
     }
+    .boton-aceptar{
+        
+    display: flex;
+    justify-content: center;
+   align-content: center;
+   align-items: center;
+    }
+    /* The Modal (background) */
+.modal {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 
-    .contenido h3 {
-        margin-bottom: 10px;
-    }
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
 
-    .contenido p {
-        padding: 1em;
-        font-size: 18px;
-    }
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
 
-    .contenido button {
-        width: 35%;
-        height: 10%;
-        align-self: center;
-        color: var(--blanco);
-        background-color: var(--negro2);
-        padding: 5px;
-        font-size: 1em;
-        margin-top: 1em;
-        border-radius: 3px;
-        border: 0;
-        font-family: 'Roboto', sans-serif;
-    }
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
 
     #btn-modal {
         padding: 1em;

@@ -24,7 +24,7 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    background-image: url(../img/pesce-huang-PonEYQKo0XU-unsplash.jpg);
+    background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -37,87 +37,74 @@ h5 {
     font-family: 'Marcellus', serif;
 }
 
-.container-form {
-    color: var(--blanco);
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    width: 50%;
-    align-items: center;
-    margin: auto;
-    margin-top: 130px;
-    background-color: rgba(70, 111, 223, 0.85);
-    border-radius: 3px;
-    font-size: 18px;
-}
 
 .container-form .svg {
     width: 100%;
-}
-
-.container-image {
-    margin-top: -130px;
+  }
+  
+  .image {
+    margin-top: -120px;
     padding: 20px;
     display: flex;
     float: left;
     margin-right: 50%;
     width: 200px;
-}
-
-.container-icons {
-    text-decoration: none;
-    font-size: 30px;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    text-align: center;
-    background-color: var(--Magenta);
-    color: var(--blanco);
-    border-radius: 50%;
-}
-
-.container-input {
-    float: inline-start;
-    height: 30px;
-    width: 65%;
+  }
+  .login-box input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 80%;
+  }
+  
+  .login-box input[type="submit"] {
     border: none;
     outline: none;
-    border-radius: 5px;
-    background-color: var(--blanco);
+    width: 50%;
+    height: 40px;
+    background: #0e0203;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .container-form {
     color: var(--blanco);
-}
-
-.container-form span {
+    display: flex;
+    flex-direction: column;
+    height: 425px;
+    width: 400px;
+    align-items: center;
+    margin: auto;
+    margin-top: 130px;
+    background-color: rgba(76, 140, 192, 0.85);
+    border-radius: 3px;
+    font-size: 18px;
+  }
+  .container-form span {
     width: 65%;
     margin-top: 20px;
-}
-
-button {
-    margin-top: 45px;
-    width: 65%;
-    height: 30px;
-    background-color: var(--negro2);
-    color: var(--blanco);
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-form p {
-    color: var(--blanco);
+  }
+  
+  .container-form p {
     margin-top: 10px;
     font-size: 14px;
-}
-
-.color-message {
+  }
+  
+  .container-form a {
     color: var(--negro2);
     text-decoration: none;
-}
-
-a {
-    color: var(--blanco);
-    text-decoration: none;
-}
+  }
+  
 
 @media screen and (min-width: 320px) {
     .container-form {
@@ -138,32 +125,68 @@ a {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .container-form {
-        display: flex;
-        flex-direction: column;
-        margin-top: 5%;
-        height: 50%;
-        width: 50%;
-    }
+@media screen and (min-width: 1024px) {
+  
+
+
+.container-form .svg {
+  width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+.image {
+  margin-top: -120px;
+  padding: 20px;
+  display: flex;
+  float: left;
+  margin-right: 50%;
+  width: 200px;
+}
+
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  width: 90%;
+}
+
+.container-form {
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  height: 425px;
+  width: 400px;
+  align-items: center;
+  margin: auto;
+  margin-top: 130px;
+  background-color: rgba(76, 140, 192, 0.85);
+  border-radius: 3px;
+  font-size: 18px;
+}
+.container-form span {
+  width: 65%;
+  margin-top: 20px;
+}
+
+.container-form p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.container-form a {
+  color: var(--negro2);
+  text-decoration: none;
+}
+
     .container-form {
         display: flex;
         flex-direction: column;
         margin-top: 8%;
         height: 50%;
         width: 40%;
-    }
-}
-
-@media screen and (min-width: 1308px) {
-    .container-form {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10%;
-        height: 50%;
-        width: 35%;
     }
 }

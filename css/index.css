@@ -34,6 +34,34 @@ h5 {
 
 @media only screen and (min-width: 320px) {
 
+    
+
+    nav {
+        top: 0;
+        font-family: 'Marcellus', serif;
+        font-size: 1.3em;
+        position: sticky;
+        width: 100%;
+        padding: 0%;
+    }
+
+    nav a {
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .navbar-button {
+        background-color: transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: 'Marcellus', serif;
+        color: var(--blanco);
+    }
+    
+
     .item {
         padding: 1rem;
     }
@@ -57,7 +85,7 @@ h5 {
     }
 
     .menu {
-        background-color: #0B3860;
+        background-color: rgba(1, 10, 52, 0.838);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -73,32 +101,28 @@ h5 {
     .item {
         padding: 1rem;
     }
+#fondo{
+    
+    display: flex;
+    align-items: flex-end;
+    background: url(../img/slide1.jpg);
+    color: white;
+    padding-top: 1rem;
+    height: 780px;
 
-    nav {
-        top: 0;
-        font-family: 'Marcellus', serif;
-        font-size: 1.3em;
-        position: sticky;
-        width: 100%;
-        padding: 0%;
-        z-index: 3;
-    }
+}
+.fondo-title{
+    padding: 2%;
+    font-family: marcellus;
+    text-align: left;
+    font-size: 76px;
+    /* background-color: rgba(0,0,0,0.35); */
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.0001));
+    
+}
 
-    nav a {
-        color: var(--blanco);
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .navbar-button {
-        background-color: transparent;
-        border: none;
-        border-radius: 3px;
-        font-size: 1em;
-        padding: 0.5rem;
-        font-family: 'Marcellus', serif;
-        color: var(--blanco);
-    }
+    /*MENU HAMBURGUESA*/
 
     .outside {
         transform: translateY(-100em);
@@ -107,6 +131,7 @@ h5 {
     .open {
         transform: translateX(0);
     }
+     /*MENU HAMBURGUESA*/
 
     .container-carousel{
         margin-top: -75.9%;
@@ -187,10 +212,13 @@ h5 {
         text-align: center;
     }
 
-    .location-tittle {
-        color: var(--negro2);
-        font-size: 2em;
-        text-align: center;
+    .ubi{
+    
+        font-size: 90px;
+        font-family: PlayFar;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1%;
     }
 
     .cont-maps {
@@ -207,6 +235,20 @@ h5 {
         flex-direction: column;
         padding-top: 1em;
     }
+    .linea {
+        border-bottom: 3px solid;
+        border-image: linear-gradient(to left, #337AB7 0%, #337AB7 100%) 1;
+        margin-bottom: 10%;
+    }
+    
+.dir1{
+    display: flex;
+    font-size: 35px;
+    margin-top: -8%;
+    font-family: PlayFar;
+    display: flex;
+    justify-content: center;
+}
 
     .split-line {
         width: 90%;
@@ -297,53 +339,56 @@ h5 {
         transition: 0.6s ease;
         border-radius: 1px;
     }
-
-    .footer-section {
+    
+    /*:::::Pie de Pagina*/
+    .pie-pagina{
         display: flex;
-        margin-top: 2em;
-        background-color: var(--negro2);
+        width: 100%;
+        background-color:  #000;
+    }
+    .pie-pagina .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:50px;
+        padding: 45px 0px;
+
+    }
+    .pie-pagina .grupo-1 .box figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        flex-direction: column;
-        width: 100%;
-        height: 20%;
-        padding: 5px 0;
     }
-
-    .footer-section section {
-        width: 100%;
-        color: var(--blanco);
-        padding: 2em;
+    .pie-pagina .grupo-1 .box figure img{
+        width: 250px;
     }
-
-    .split-lines {
-        display: flex;
-        border-color: var(--blanco);
-        background-color: var(--blanco);
+    .pie-pagina .grupo-1 .box h2{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
     }
-
-    .icons i {
-        padding-left: 1em;
-        font-size: 150%;
-        color: var(--blanco);
+    .pie-pagina .grupo-1 .box p{
+        color: #efefef;
+        margin-bottom: 10px;
     }
-
-    .icons-seconds i {
-        padding-left: 1em;
-        font-size: 150%;
-        color: var(--blanco);
+    .pie-pagina .grupo-1 .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        text-align: center;
     }
-
-    .icons {
-        display: none;
-    }
-
-    .footer-direction {
-        padding: 1em 0;
-        font-size: 120%;
-    }
-
-    .footer-policies {
-        padding: 1em;
+    @media screen and (max-width:800px){
+        .pie-pagina .grupo-1 {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 35px 0px;
+        }
     }
 
 }
@@ -356,6 +401,7 @@ h5 {
         justify-content: space-between;
         background-color: var(--negro2);
         font-family: 'Marcellus', serif;
+        position: sticky;
         font-size: 1.3em;
         padding: 1rem;
     }
@@ -400,10 +446,6 @@ h5 {
         background-color: #0B3860;
         color: var(--blanco);
         width: 100%;
-    }
-
-    .container-carousel{
-        margin-top: 0%;
     }
 
     .container-text {
@@ -590,66 +632,57 @@ h5 {
         font-size: 150%;
         padding: 1%;
     }
-
-    .container-lines {
+    /*:::::Pie de Pagina*/
+    .pie-pagina{
+        width: 100%;
+        background-color:  #000;
+    }
+    .pie-pagina .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:50px;
+        padding: 45px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pie-pagina .grupo-1 .box figure img{
+        width: 250px;
+    }
+    .pie-pagina .grupo-1 .box h2{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .pie-pagina .grupo-1 .box p{
+        color: #efefef;
+        margin-bottom: 10px;
+    }
+    .pie-pagina .grupo-1 .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        color: #fff;
         text-align: center;
     }
-
-    .lines {
-        cursor: pointer;
-        height: 10px;
-        width: 55px;
-        margin: 0 2px;
-        background-color: var(--negro2);
-        display: inline-block;
-        transition: 0.6s ease;
-        border-radius: 1px;
+    .pie-pagina .grupo-1 .red-social a:hover{
+        color: aqua;
     }
-
-    .footer-section {
-        display: flex;
-        margin-top: 5em;
-        background-color: var(--negro2);
-        justify-content: space-evenly;
-        align-items: baseline;
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-        padding: 0%;
-    }
-
-    .footer-section section {
-        width: 30%;
-        color: var(--blanco);
-        padding: 0 2em;
-        margin-top: 5em;
-    }
-
-    .split-lines {
-        display: none;
-    }
-
-    .icons-seconds {
-        display: none;
-    }
-
-    .icons {
-        display: flex;
-    }
-
-    .icons i {
-        padding: 1em;
-        font-size: 150%;
-    }
-
-    .footer-direction {
-        display: flex;
-        flex-direction: row;
-        padding: 1em 0;
-    }
-
-    .footer-policies {
-        padding: 1em;
+    @media screen and (max-width:800px){
+        .pie-pagina .grupo-1 {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap:30px;
+            padding: 35px 0px;
+        }
     }
 
 }

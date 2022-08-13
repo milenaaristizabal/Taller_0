@@ -21,7 +21,7 @@
 }
 
 .dash {
-    background-image: url(../img/lin-leyu-cIRFLobYPkY-unsplash.jpg);
+    background-image: url(../img/bogota.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -63,8 +63,12 @@
 
     .item {
         display: flex;
-        flex-direction: column; 
-    }
+        position: relative;
+        top: 90px;
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: space-around;
+        }
 
     nav .menu .item div {
         padding: 10px;
@@ -86,7 +90,7 @@
     nav .exit {
         padding: 1rem;
         font-size: 1.5rem;
-        background-color: var(--negro2);
+        background-color: var(--azuloscuro);
     }
 
     nav .exit a {
@@ -115,6 +119,15 @@
         letter-spacing: 2px;
     }
 
+    #ti{
+        width: 100%;
+        display: flex;
+        font-size: 50px;
+        font-family: Marcellus;
+        justify-content: center;
+                align-content: center;
+                align-items: center;
+    }
     .info {
         display: flex;
         width: 100%;
@@ -142,6 +155,9 @@
         padding: 1rem;
         background-color: var(--negro);
         font-size: 1em;
+    }
+    .text-danger{
+        color: red;
     }
 
     .icon2 {

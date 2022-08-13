@@ -9,7 +9,7 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/dashboard.css">
-    <title>Taller 0 Maquetación Responsive Dashboard</title>
+    <title>Dashboard</title>
 </head>
 
 <body class="dash">
@@ -38,14 +38,11 @@
 
 
     <section class="dashboard">
-
-        <div class="bienvenido">
-            <h1>Bienvenido, Angie Vargas</h1>
-        </div>
+        <p id="ti">Bienvenido, Angie Vargas</p>
 
         <div class="info">
             <div class="foto">
-                <div class="img"><img src="img/aiony-haust-3TLl_97HNJo-unsplash.jpg"></div>
+                <div class="img"><img src="img/señora.jpg"></div>
                 <div class="icon2">
                     <i class="fa-solid fa-file-export"></i>
                 </div>
@@ -53,26 +50,26 @@
                     <i class="fa-solid fa-file-export"></i>
                     <i class="fa-solid fa-file-image"></i>
                 </div>
-                <a href="#">Cambiar contraseña</a>
+                <a href="#"><h3>Cambiar contraseña</h3></a>
             </div>
 
             <form>
                 <div class="columnas">
                     <div class="col-1">
                         <div>
-                            <label for="tipo">Tipo de documento</label>
-                            <input type="text" name="nombre" value="Cedula de ciudadania">
+                            <label>Tipo Documento <span class="text-danger"><b>*</b></span></label>
+                            <input type="text" name="nombre" readonly onmousedown="" value="Cedula de ciudadania">
                         </div>
                         <div>
-                            <label for="fecha">Fecha de nacimiento</label>
-                            <input type="date" name="fecha" value="1976-08-10">
+                            <label>Fecha Nacimiento <span class="text-danger"><b>*</b></span></label>
+                            <input type="date" name="fecha" readonly onmousedown="" value="1976-08-10">
                         </div>
                         <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" value="Angie Camila">
+                            <label>Nombres <span class="text-danger"><b>*</b></span></label>
+                            <input type="text" name="nombre" readonly onmousedown="" id="nombre" value="Angie Camila">
                         </div>
                         <div>
-                            <label for="genero">Género</label>
+                            <label>Genero <span class="text-danger"><b>*</b></span></label><br>
                             <div id="genero">
                                 <input type="radio" name="genero" id="mujer"><label for="mujer">Mujer</label>
                                 <input type="radio" name="genero" id="hombre"><label for="hombre">Hombre</label>
@@ -80,8 +77,8 @@
                             </div>
                         </div>
                         <div>
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="e-mail" value="Angievargas2@gmail.com">
+                                <label>Correo electrónico <span class="text-danger"><b>*</b></span></label>
+                            <input type="email" placeholder="e-mail" readonly onmousedown="" value="Angievargas2@gmail.com">
                         </div>
 
                         <div class="botones">
@@ -90,7 +87,7 @@
 
                         <div class="pass">
                             <div>
-                                <label>contraseña</label>
+                                <label>Contraseña <span class="text-danger"><b>*</b></span></label>
                                 <input type="password">
                             </div>
                         </div>
@@ -102,26 +99,26 @@
                     </div>
                     <div class="col-1">
                         <div>
-                            <label for="doc">Número de documento</label>
-                            <input type="number" name="doc" id="doc" value="1025417456">
+                            <label>Numero de Documento <span class="text-danger"><b>*</b></span></label>
+                            <input type="number" name="doc" readonly onmousedown="" id="doc" value="1025417456">
                         </div>
                         <div>
-                            <label for="apellido">Apellido</label>
-                            <input type="text" name="apellido" id="apellido" value="Vargas Pinzon">
+                            <label>Apellidos <span class="text-danger"><b>*</b></span></label>
+                            <input type="text" name="apellido" readonly onmousedown="" id="apellido" value="Vargas Pinzon">
                         </div>
                         <div>
-                            <label for="pais">País de origen</label>
-                            <input type="text" name="pais" id="pais" value="Colombia">
+                            <label>Pais de origen <span class="text-danger"><b>*</b></span></label>
+                            <input type="text" name="pais" readonly onmousedown="" id="pais" value="Colombia">
                         </div>
                         <div>
-                            <label for="telefono">Telefono</label>
-                            <input type="number" name="telefono" id="telefono" value="3135207460">
+                            <label>Telefono de Contacto <span class="text-danger"><b>*</b></span></label>
+                            <input type="number" name="telefono"  readonly onmousedown="" id="telefono" value="3135207460">
                         </div>
 
 
                         <div class="pass2">
                             <div>
-                                <label>Confirmar contraseña</label>
+                                <label>Confirmar contraseña <span class="text-danger"><b>*</b></span></label>
                                 <input type="password">
                             </div>
                         </div>
